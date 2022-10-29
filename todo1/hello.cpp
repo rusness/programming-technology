@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <cstdlib> // для работы функции system()
+#include <cstdlib> // for function system()
 
 int main() {
 
