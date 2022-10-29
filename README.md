@@ -1,2 +1,2 @@
 # programming-technology
-Занятия
+Решение домашних задания
