@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// решение ДЗ 2.3.1
+// 2.3.1
 int main() {
 	
 	int login1, psw1;
