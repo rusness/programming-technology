@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ecd055f4-1e23-4855-908b-c6610223f20f" name="Default Changelist" comment="удалил исполняемый файл. &#10;отредактированл расширение файла." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2GooEMfURRcT47ttY8fkA5Qlz0V" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ecd055f4-1e23-4855-908b-c6610223f20f" name="Default Changelist" comment="" />
+      <created>1667064204039</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667064204039</updated>
+    </task>
+    <task id="LOCAL-00001" summary="изменил текст описания">
+      <created>1667065299562</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667065299562</updated>
+    </task>
+    <task id="LOCAL-00002" summary="изменил текст описания">
+      <created>1667065348774</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667065348775</updated>
+    </task>
+    <task id="LOCAL-00003" summary="изменил текст описания">
+      <created>1667065426227</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667065426227</updated>
+    </task>
+    <task id="LOCAL-00004" summary="добавил паузера">
+      <created>1667065851741</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667065851741</updated>
+    </task>
+    <task id="LOCAL-00005" summary="добавил паузера">
+      <created>1667065863424</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667065863424</updated>
+    </task>
+    <task id="LOCAL-00006" summary="добавил паузера">
+      <created>1667065972518</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1667065972518</updated>
+    </task>
+    <task id="LOCAL-00007" summary="удалил исполняемый файл. &#10;отредактированл расширение файла.">
+      <created>1667067113764</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667067113764</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="изменил текст описания" />
+    <MESSAGE value="добавил паузера" />
+    <MESSAGE value="удалил исполняемый файл. &#10;отредактированл расширение файла." />
+    <option name="LAST_COMMIT_MESSAGE" value="удалил исполняемый файл. &#10;отредактированл расширение файла." />
+  </component>
+</project>

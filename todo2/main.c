@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+	
+	int a, b;
+	
+	printf("a=");
+	scanf("%i",&a);
+	
+	printf("b=");
+	scanf("%i",&b);
+	
+	if (a==) {
+		printf("A i B ravni");	
+	}	
+	else if (a>b) {
+		printf("A bolche");	
+	     }
+	else {		
+		printf("B bolche");
+		}
+}
