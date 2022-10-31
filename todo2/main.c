@@ -16,6 +16,6 @@ int main() {
 		printf("A bolche");	
 	     }
 	else {		
-		printf("À menshe");
+		printf("A menshe");
 		}
 }
