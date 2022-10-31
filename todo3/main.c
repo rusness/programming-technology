@@ -11,7 +11,7 @@ int main() {
 	printf("PASSWORD:");
 	scanf("%i",&psw1);
 	
-	if ((login1==111)&&(psw1=222)) {
+	if ((login1==111)&&(psw1==222)) {
 		
 		printf("Correct!");
 	}
