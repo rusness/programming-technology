@@ -10,13 +10,13 @@ int main() {
 	printf("b=");
 	scanf("%i",&b);
 	
-	if (a==) {
+	if (a==b) {
 		printf("A i B ravni");	
 	}	
 	else if (a>b) {
 		printf("A bolche");	
 	     }
 	else {		
-		printf("B bolche");
+		printf("À menshe");
 		}
 }
