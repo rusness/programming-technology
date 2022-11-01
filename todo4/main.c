@@ -46,7 +46,7 @@ int main()
 			break;					
 		default:
 			{
-			printf("Number day is not correct!");
+			printf("ERROR! Number day is not correct!");
 			}
 	
 	}
