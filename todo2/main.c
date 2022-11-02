@@ -10,12 +10,12 @@ int main() {
 	scanf("%i",&b);
 	
 	if (a==b) {
-		printf("A i B ravni");	
+		printf("A и B равны");	
 	}	
 	else if (a>b) {
-		printf("A bolche");	
+		printf("A больше");	
 	     }
 	else {		
-		printf("A menshe");
+		printf("A меньше");
 		}
 }
