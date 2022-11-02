@@ -1,22 +1,22 @@
-п»ї#include <stdio.h>
+#include <stdio.h>
 
 int main() {
 	
 	int a, b;
 	
-	printf("Рђ=");
+	printf("А=");
 	scanf("%i",&a);	
-	printf("Р‘=");
+	printf("Б=");
 	scanf("%i",&b);
 	
 	if (a==b) {
-		printf("Рђ Рё Р‘ СЂР°РІРЅС‹");	
+		printf("Равны");	
 	}	
 	else if (a>b) {
-		printf("Рђ Р±РѕР»СЊС€Рµ");	
+		printf("Больше");	
 	     }
 	else {		
-		printf("Рђ РјРµРЅСЊС€Рµ");
+		printf("Меньше");
 		}
 		
 }
