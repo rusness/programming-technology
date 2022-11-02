@@ -3,7 +3,7 @@
 // 2.3.2
 int main() {
 	
-	int login1, psw1;
+	long long int login1, psw1;
 	
 		
 	printf("LOGIN:");
