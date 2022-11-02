@@ -4,18 +4,18 @@ int main() {
 	
 	int a, b;
 	
-	printf("a=");
+	printf("А=");
 	scanf("%i",&a);	
-	printf("b=");
+	printf("Б=");
 	scanf("%i",&b);
 	
 	if (a==b) {
-		printf("A и B равны");	
+		printf("А и Б равны");	
 	}	
 	else if (a>b) {
-		printf("A больше");	
+		printf("А больше");	
 	     }
 	else {		
-		printf("A меньше");
+		printf("А меньше");
 		}
 }
