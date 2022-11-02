@@ -14,16 +14,19 @@ int main()
 			printf("MON");
 			
 			break;
+			
 		case 2:
 			
 			printf("TUE");
 			
 			break;
+			
 		case 3:
 			
 		    printf("WED");
 			
 			break;
+			
 		case 4:
 			
 			printf("THU");
