@@ -11,44 +11,47 @@ int main()
 	{		
 		case 1:
 			
-				printf("MON");
+			printf("MON");
 			
 			break;
 		case 2:
 			
-				printf("TUE");
+			printf("TUE");
 			
 			break;
 		case 3:
 			
-		        printf("WED");
+		    printf("WED");
 			
 			break;
 		case 4:
 			
-				printf("THU");
+			printf("THU");
 			
 			break;
+			
 		case 5:
 			
-				printf("FRI");
+			printf("FRI");
 			
 			break;
+			
 		case 6:
 			
-				printf("SAT");
+			printf("SAT");
 			
 			break;	
+			
 		case 7:
 			
-				printf("SUN");
+			printf("SUN");
 			
-			break;					
+			break;
+								
 		default:
 			
 			printf("ERROR! Number day is not correct!");
 			
-	
 	}
 		
 }
