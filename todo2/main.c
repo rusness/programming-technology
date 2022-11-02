@@ -4,20 +4,19 @@ int main() {
 	
 	int a, b;
 	
-	printf("ГЂ=");
+	printf("А=");
 	scanf("%i",&a);	
-	printf("ГЃ=");
+	printf("Б=");
 	scanf("%i",&b);
 	
 	if (a==b) {
-		printf("ГЂ ГЁ ГЃ Г°Г ГўГ­Г»");	
+		printf("А и Б равны");	
 	}	
 	else if (a>b) {
-		printf("ГЂ ГЎГ®Г«ГјГёГҐ");	
+		printf("А больше");	
 	     }
 	else {		
-		printf("ГЂ Г¬ГҐГ­ГјГёГҐ");
+		printf("А меньше");
 		}
-	
 		
 }
