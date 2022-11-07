@@ -7,7 +7,7 @@ int main() {
 	
 	while (i<15)
 	{
-		if (i%2==0)
+		if (i%2!=0)
 		{
 			printf("%i \n",i);
 		}
