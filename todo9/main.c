@@ -12,7 +12,6 @@ int main() {
 		printf("¬ведите количество чисел:");
 		scanf("%i",&n);
 	}
-
 	int i=1;
 	
 	printf("¬ведите число: ");
@@ -21,10 +20,10 @@ int main() {
 	min=x;
 	max=x;
 	sum+=x;
-	int j = n-1;
+	
 	
 	// определение макс и мин числа и суммирование
-    while (i<=j)
+    while (i<n)
 	{
 	 	printf("¬ведите число: ");
 		scanf("%i",&x);
