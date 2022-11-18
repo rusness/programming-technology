@@ -1,4 +1,4 @@
-#include <stdio.h>
+п»ї#include <stdio.h>
 #include <stdbool.h>
 
 
@@ -7,7 +7,7 @@ int main() {
 	int p[100];
 	int n;
 	
-	printf("Введите количество элементов: \n");
+	printf("Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЌР»РµРјРµРЅС‚РѕРІ: \n");
 	scanf("%i",&n);
 	
 	for (int i=0; i<n; i++)
