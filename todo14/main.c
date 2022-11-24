@@ -21,10 +21,10 @@ int main() {
 	for (int i=0; i<r;i++)
 	{
 		for (int j=0;j<c;j++)
-		    {			
-				// rand() % длина_диапазона +(-) сдвиг		
-				m[i][j]=rand()%10-2;
-			}
+		{			
+			// rand() % длина_диапазона +(-) сдвиг		
+			m[i][j]=rand()%10-2;
+		}
 
 	}
 	
@@ -34,6 +34,7 @@ int main() {
 		{
 			printf("%12i",m[i][j]);
 		}
+		
 		printf("\n");
 		printf("\n");
 	}
