@@ -3,8 +3,11 @@
 
 
 void fillandshow(int mas[], int n)
+
 {
-	for (int i=0; i<n; i++)
+	int i;
+	
+	for (i=0; i<n; i++)
 	{
 		mas[i] = rand()%100;
 		printf("%3d",mas[i]);	
@@ -14,14 +17,17 @@ void fillandshow(int mas[], int n)
 int main()
 {
 	
-	int n  = 4;
-	int n1 = 6;
-	int a[n];
-	int b[n1];
+	size_t n  = 4;
+	size_t n1 = 6;
+	int *a = malloc(n * sizeof(int));
+	int *b = malloc(n1 * sizeof(int));
 	
 	fillandshow(a,n);
 	printf("\n\n");
 	fillandshow(b,n1);
+	
+	free(a);
+	free(b);
 	
 	return 0;
 }
