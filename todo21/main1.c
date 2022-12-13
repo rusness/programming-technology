@@ -2,7 +2,7 @@
 #include <string.h>
 #include <locale.h>
 
-char * remove_trim(char word[])
+char * remove_space(char word[])
 {
 	int n = 0; // для обработки начало строки
 	char tmp[100];
@@ -42,7 +42,7 @@ int main()
 	printf("Введите строку: ");
 	gets(word);
 	
-	char * new_word = remove_trim(word); 
+	char * new_word = remove_space(word); 
 	
  	puts(new_word);
 	
