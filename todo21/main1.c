@@ -4,33 +4,23 @@
 
 char * remove_space(char word[])
 {
-	int n = 0; // для обработки начало строки
-	char tmp[100];
-	
-	while (word[n]==' ')
-	{
-		n++;
-	}	 
-	 
-	// копируем без первых пробелов
+
 	int i;
-	int j=0;
-	for (i=n;i<=strlen(word)+1;i++)
-	{
-		tmp[j] = word[i];
-		j++;
-	}  
 	
-	// затираем последние пробелы
-	for (i=strlen(tmp);i>=0;i--)
+	while(word[i]==' ')
+   {
+     memcpy(word,word+1,strlen(word)+1);
+   }	 
+	 
+	for (i=strlen(word);i>=0;i--)
 	{
-		if (tmp[i]==' ')
+		if (word[i]==' ')
 		{
-			tmp[i] = '\0';
+			word[i] = '\0';
 		}
 	}
 	
-	return tmp;
+	return word;
 	
 }
 
