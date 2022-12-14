@@ -7,7 +7,7 @@ void change_smb(char *word, char smb)
 {
 	
 	word[0] = smb;
-	word[strlen(word)] = smb;
+	word[strlen(word)-1] = smb;
 
 }
 

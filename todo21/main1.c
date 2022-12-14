@@ -9,7 +9,7 @@ char * remove_space(char word[])
 	
 	while(word[i]==' ')
    {
-     memcpy(word,word+1,strlen(word)+1);
+     memcpy(word,word+1,strlen(word));
    }	 
 	 
 	for (i=strlen(word);i>=0;i--)
