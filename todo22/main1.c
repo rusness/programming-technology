@@ -65,7 +65,7 @@ class Employees
 int main()
 {
 	// студент Петров
-	struct Students student;
+	Students student;
 	strcpy(student.FIO.name, "Petrov Ivan");
 	student.Pass.discount = 5;
 	student.Pass.type     = 0;
@@ -73,8 +73,9 @@ int main()
 	student.getinfo();
 	
 	printf("\n\n");
+	
 	// преподаватель Попов
-	struct Teachers teacher;
+	Teachers teacher;
 	strcpy(teacher.FIO.name,"Popov Aleksey");
 	teacher.Pass.type = 1;
 	teacher.Pass.discount = 50;
@@ -84,7 +85,7 @@ int main()
 	printf("\n\n");
 	
 	// дворник Сидоров
-	struct Employees employe;
+	Employees employe;
 	strcpy(employe.FIO.name,"Sidorov Sergey");
 	employe.Pass.type = 2;
 	employe.Pass.discount = 100;
