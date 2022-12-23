@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <string>
 
 
@@ -26,7 +26,7 @@ int Foo(char * Str)
             }
             else                
                 {
-                throw exception("Плохой символ в строке, Вычисление прервано!");
+                throw exception("РџР»РѕС…РѕР№ СЃРёРјРІРѕР» РІ СЃС‚СЂРѕРєРµ, Р’С‹С‡РёСЃР»РµРЅРёРµ РїСЂРµСЂРІР°РЅРѕ!");
                 }
     }
     a2 = a;
@@ -52,7 +52,7 @@ int main()
 	const int size = 100;
 	char *arr = new char[size];	
 
-	cout << "Введите строку для вычисления: \t"; 
+	cout << "Р’РІРµРґРёС‚Рµ СЃС‚СЂРѕРєСѓ РґР»СЏ РІС‹С‡РёСЃР»РµРЅРёСЏ: \t"; 
 	cin >> arr;
 
 	try

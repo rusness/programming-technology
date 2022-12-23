@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <fstream>
 #include <string>
 
@@ -28,7 +28,7 @@ void Foo()
 
 	if (!fin.is_open())
 	{
-		throw FileWasNotOpenedException("Ошибка открытия файла!");
+		throw FileWasNotOpenedException("РћС€РёР±РєР° РѕС‚РєСЂС‹С‚РёСЏ С„Р°Р№Р»Р°!");
 	}
 	else
 

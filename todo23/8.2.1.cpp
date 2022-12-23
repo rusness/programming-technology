@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 
 using namespace std;
 
@@ -7,7 +7,7 @@ int devide(int value)
 
 	if (value == 0)
 	{
-		throw exception("Деление на ноль!");
+		throw exception("Р”РµР»РµРЅРёРµ РЅР° РЅРѕР»СЊ!");
 	}
 
 	return 1024 / value;
@@ -18,13 +18,13 @@ int main()
 {
 	setlocale(LC_ALL, "ru");
 	int a;
-	cout << "Введите число!" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ!" << endl;
 	cin >> a;
 
 
 	try
 	{
-		cout << "Результат деления: \t" << devide(a) << endl;
+		cout << "Р РµР·СѓР»СЊС‚Р°С‚ РґРµР»РµРЅРёСЏ: \t" << devide(a) << endl;
 	}
 	catch (const exception& ex)
 	{
