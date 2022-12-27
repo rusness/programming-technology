@@ -8,8 +8,7 @@ protected:
 	double a, b, c, x;
 public:
 	virtual double Foo(double x) = 0;
-    //virtual void Print() = 0;
-
+  
 	void SetParams(double a, double b, double c)
 	{
 		this->a = a;
