@@ -8,7 +8,7 @@ protected:
 	double a, b, c, x;
 public:
 	virtual double Foo(double x) = 0;
-    virtual void Print() = 0;
+    //virtual void Print() = 0;
 
 	void SetParams(double a, double b, double c)
 	{
@@ -21,6 +21,10 @@ public:
     {
         this->x = x;
     }
+    void Print()
+    {
+        cout << "f(" << x << ")=" << this->Foo(x) << endl;
+    }
 };
 
 class Parabola :public Function
@@ -30,10 +34,7 @@ public:
     {
         return a * x * x + b * x + c;
     }
-    void Print()
-    {
-        cout << "f(" << x << ")=" << this->Foo(x) << endl;
-    }
+  
 };
 
 class Ellipse :public Function
@@ -44,10 +45,7 @@ public:
 	{
 		return sqrt(a - x * x * b) + c;
 	}
-    void Print()
-    {
-        cout << "f(" << x << ")=" << this->Foo(x) << endl;
-    }
+
 };
 
 class Hyperbola: public Function
@@ -57,10 +55,7 @@ public:
     {
         return a / (x - b) + c;
     }
-    void Print()
-    {
-        cout << "f(" << x << ")=" << this->Foo(x) << endl;
-    }
+ 
 };
 
 
