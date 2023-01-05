@@ -1,9 +1,9 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <string>
 
 /*
-* Создать класс Car (автомобиль) с полями company (компания) и model (модель). Классы-наследники: PassengerCar (легковой автомобиль) и Bus (автобус).
-От этих классов наследует класс Minivan (минивэн). Создать конструкторы для каждого из классов, чтобы они выводили данные о классах. Обратить внимание на проблему ромбовидного наследования.
+* РЎРѕР·РґР°С‚СЊ РєР»Р°СЃСЃ Car (Р°РІС‚РѕРјРѕР±РёР»СЊ) СЃ РїРѕР»СЏРјРё company (РєРѕРјРїР°РЅРёСЏ) Рё model (РјРѕРґРµР»СЊ). РљР»Р°СЃСЃС‹-РЅР°СЃР»РµРґРЅРёРєРё: PassengerCar (Р»РµРіРєРѕРІРѕР№ Р°РІС‚РѕРјРѕР±РёР»СЊ) Рё Bus (Р°РІС‚РѕР±СѓСЃ).
+РћС‚ СЌС‚РёС… РєР»Р°СЃСЃРѕРІ РЅР°СЃР»РµРґСѓРµС‚ РєР»Р°СЃСЃ Minivan (РјРёРЅРёРІСЌРЅ). РЎРѕР·РґР°С‚СЊ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹ РґР»СЏ РєР°Р¶РґРѕРіРѕ РёР· РєР»Р°СЃСЃРѕРІ, С‡С‚РѕР±С‹ РѕРЅРё РІС‹РІРѕРґРёР»Рё РґР°РЅРЅС‹Рµ Рѕ РєР»Р°СЃСЃР°С…. РћР±СЂР°С‚РёС‚СЊ РІРЅРёРјР°РЅРёРµ РЅР° РїСЂРѕР±Р»РµРјСѓ СЂРѕРјР±РѕРІРёРґРЅРѕРіРѕ РЅР°СЃР»РµРґРѕРІР°РЅРёСЏ.
 */
 
 
@@ -36,7 +36,7 @@ public:
 	PassagerCar(){}
 	PassagerCar(string company, string model) :Car(company, model)
 	{
-		cout << "Класс PaasagerCar: " << endl;
+		cout << "РљР»Р°СЃСЃ PaasagerCar: " << endl;
 		cout << "company: \t" << company << endl;
 		cout << "model: \t" << model << endl;
 	}
@@ -48,7 +48,7 @@ public:
 	Bus(){}
 	Bus(string company, string model) :Car(company, model)
 	{
-		cout << "Класс Bus: " << endl;
+		cout << "РљР»Р°СЃСЃ Bus: " << endl;
 		cout << "company: \t" << company << endl;
 		cout << "model: \t" << model << endl;
 	}
@@ -59,7 +59,7 @@ class Minivan : public PassagerCar, public Bus
 public:
 	Minivan(string company, string model):Car(company, model)
 	{
-		cout << "Класс Minivan: " << endl;
+		cout << "РљР»Р°СЃСЃ Minivan: " << endl;
 		cout << "company: \t" << company << endl;
 		cout << "model: \t" << model << endl;
 	}
