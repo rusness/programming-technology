@@ -21,7 +21,7 @@ public:
 	Fraction(double inputNumerator, double inputDenominator)
 		: numerator(inputNumerator), denominator(inputDenominator)
 	{
-		if (denominator == 0) throw invalid_argument("denominator = 0 !!!");;
+		if (denominator == 0) throw invalid_argument("denominator = 0 !!!");
 	}
 
 	friend Fraction operator+(const Fraction& d1, const Fraction& d2);
@@ -33,7 +33,7 @@ public:
 
 	void setDenominator(double inputDenominator)
 	{
-		if (inputDenominator == 0) inputDenominator = 0.00000001;
+		if (inputDenominator == 0) throw invalid_argument("denominator = 0 !!!");
 		denominator = inputDenominator;
 	}
 
@@ -139,6 +139,8 @@ int main()
 	if (d1 <= d2) cout << "\nFraction 1 <= Fraction 2";
 	if (d1 < d2) cout << "\nFraction 1 < Fraction 2";
 	if (d1 >= d2) cout << "\nFraction 1 >= Fraction 2";
+
+	cout << "\n\n";
 	}
 	catch (const invalid_argument& e)
 	{
