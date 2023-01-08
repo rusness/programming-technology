@@ -29,7 +29,7 @@ public:
 	friend Fraction operator*(const Fraction& d1, const Fraction& d2);
 	friend Fraction operator/(const Fraction& d1, const Fraction& d2);
 	friend Fraction operator-(const Fraction& d1);
-	friend std::ostream& operator<<(std::ostream& out, const Fraction& fraction);
+	friend ostream& operator<<(ostream& out, const Fraction& fraction);
 
 	void setDenominator(double inputDenominator)
 	{
@@ -115,7 +115,7 @@ bool operator>=(Fraction& d1, Fraction& d2)
 }
 
 
-std::ostream& operator<<(std::ostream& out, const Fraction& fraction)
+ostream& operator<<(ostream& out, const Fraction& fraction)
 {
 	out << fraction.numerator << "/" << fraction.denominator;
 	return out;
