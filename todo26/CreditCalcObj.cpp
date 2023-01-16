@@ -44,6 +44,8 @@ public:
 	}
 
 	void Calculate(double amount, double month, double proc, int i);
+	void Calculate(double amount, double month, double proc, int i, int j);
+
 	
 private:
 
@@ -91,7 +93,7 @@ public:
 		for  (int i = 0; i < pcalc.month; i++)
 		{
 			PaymentSchedule g;
-			g.Calculate(pcalc.amount, pcalc.month, pcalc.procent, i);
+			g.Calculate(pcalc.amount, pcalc.month, pcalc.procent, i, false);
 			loanBalance -= g.principalDebt;
 			g.loanBalance = loanBalance;
 			ps[i] = g;
@@ -127,9 +129,9 @@ public:
 			for (int j = idx+1, t = 0; j < this->month; j++, t++)
 			{
 					PaymentSchedule g;
-					g.Calculate(amountloanBalance, remainingPaymentAmount, this->procent, t);
+					g.Calculate(amountloanBalance, remainingPaymentAmount, this->procent, t, j);
 					loanBalance -= g.principalDebt;
-					g.loanBalance = loanBalance;
+					g.loanBalance = loanBalance<0? 0.00: loanBalance;
 					this->ps[j] = g;					
 			}
 
@@ -168,8 +170,16 @@ void PaymentSchedule::Calculate(double amount, double month, double procent, int
 {
 	this->numberMonth    = i + 1;
 	this->principalDebt  = amount / month;
-	this->interestAmount = (((amount - (this->principalDebt * (double)i)) * procent) / 12.0) / 100.0;
+	this->interestAmount = (((amount - (this->principalDebt * i)) * procent) / 12.0) / 100.0;
 	this->payment		 = this->principalDebt + this->interestAmount;	
+}
+
+void PaymentSchedule::Calculate(double amount, double month, double procent, int i, int j)
+{
+	this->numberMonth = j + 1;
+	this->principalDebt = amount / month;
+	this->interestAmount = (((amount - (this->principalDebt * i)) * procent) / 12.0) / 100.0;
+	this->payment = this->principalDebt + this->interestAmount;
 }
 
 
