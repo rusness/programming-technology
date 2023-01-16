@@ -86,7 +86,7 @@ public:
 	}
 	void Calculate(Calc &pcalc)
 	{
-		PaymentSchedule  *ps = new PaymentSchedule[pcalc.month];
+		PaymentSchedule  *ps = new PaymentSchedule[(int)pcalc.month];
 		double loanBalance = pcalc.amount;
 		for  (int i = 0; i < pcalc.month; i++)
 		{
@@ -115,12 +115,10 @@ public:
 			// оставшейся срок
 			int remainingPaymentAmount = (int)this->month - (int)listArrayOfPayments[i].month;
 			
-			if (idx != 0)
-			{
-				loanBalanceTotal = this->ps[idx].loanBalance;
-				this->ps[idx].earlyRepayment = amount;
-				this->ps[idx].loanBalance = this->ps[idx].loanBalance - amount;
-			}
+			loanBalanceTotal = this->ps[idx].loanBalance;
+			this->ps[idx].earlyRepayment = amount;
+			this->ps[idx].loanBalance = this->ps[idx].loanBalance - amount;
+		
 
 			loanBalanceTotal -= amount;
 			double amountloanBalance = loanBalanceTotal;
@@ -209,7 +207,7 @@ int main()
 		cout << endl;
 		cout << endl;
 
-		// реализация досрочного погашения с выбором месяца и суммы, без проверок
+		// реализация досрочного погашения по количеству таких платежец - с выбором месяца и суммы, без проверок
 		cout << "Будет ли досрочное погашение? (0-нет,1-да) ";
 		cin >> earlyRepayment;
 
