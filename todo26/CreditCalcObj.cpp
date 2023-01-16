@@ -93,11 +93,10 @@ public:
 		for  (int i = 0; i < pcalc.month; i++)
 		{
 			PaymentSchedule g;
-			g.Calculate(pcalc.amount, pcalc.month, pcalc.procent, i, false);
+			g.Calculate(pcalc.amount, pcalc.month, pcalc.procent, i);
 			loanBalance -= g.principalDebt;
-			g.loanBalance = loanBalance;
+			g.loanBalance = loanBalance < 0 ? 0.00 : loanBalance;
 			ps[i] = g;
-
 		}
 
 		pcalc.ps = ps;
@@ -111,16 +110,14 @@ public:
 		for (size_t i = 0; i <= sizeof(*listArrayOfPayments) / sizeof(*listArrayOfPayments); i++)
 		{
 			int idx = (int)listArrayOfPayments[i].month-1;
-			double amount = listArrayOfPayments[i].amount;
-			
+			double amount = listArrayOfPayments[i].amount;			
 			
 			// оставшейся срок
 			int remainingPaymentAmount = (int)this->month - (int)listArrayOfPayments[i].month;
 			
 			loanBalanceTotal = this->ps[idx].loanBalance;
 			this->ps[idx].earlyRepayment = amount;
-			this->ps[idx].loanBalance = this->ps[idx].loanBalance - amount;
-		
+			this->ps[idx].loanBalance = this->ps[idx].loanBalance - amount;		
 
 			loanBalanceTotal -= amount;
 			double amountloanBalance = loanBalanceTotal;
@@ -132,9 +129,8 @@ public:
 					g.Calculate(amountloanBalance, remainingPaymentAmount, this->procent, t, j);
 					loanBalance -= g.principalDebt;
 					g.loanBalance = loanBalance<0? 0.00: loanBalance;
-					this->ps[j] = g;					
+					this->ps[j] = g;	
 			}
-
 		}
 	}
 
