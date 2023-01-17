@@ -88,7 +88,8 @@ public:
 	}
 	void Calculate(Calc &pcalc)
 	{
-		PaymentSchedule  *ps = new PaymentSchedule[(int)pcalc.month];
+		
+		pcalc.ps = new PaymentSchedule[(int)pcalc.month];
 		double loanBalance = pcalc.amount;
 		for  (int i = 0; i < pcalc.month; i++)
 		{
@@ -96,10 +97,10 @@ public:
 			g.Calculate(pcalc.amount, pcalc.month, pcalc.procent, i);
 			loanBalance -= g.principalDebt;
 			g.loanBalance = loanBalance < 0 ? 0.00 : loanBalance;
-			ps[i] = g;
+			pcalc.ps[i] = g;
 		}
 
-		pcalc.ps = ps;
+		
 	}
 
 	void PerformRepayment(EarlyRepayment  *listArrayOfPayments)
