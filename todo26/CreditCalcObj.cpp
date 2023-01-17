@@ -136,7 +136,7 @@ public:
 
 	void Print()
 	{
-		PaymentSchedule *ps = this->ps;
+		
 		int m = (int)this->month;
 		double principalDebt = 0;
 		double interestAmount = 0;
@@ -144,12 +144,13 @@ public:
 
 		for (int i = 0; i < m; i++)
 		{
-			cout << fixed<< setprecision(2)<<ps[i].numberMonth << " месяц  Основной платеж:" << ps[i].principalDebt << "  Процент:" << ps[i].interestAmount << "  Всего:" << ps[i].payment << " Остаток: " << ps[i].loanBalance << " Досрочное погашение: " << ps[i].earlyRepayment << endl;
-			principalDebt += ps[i].principalDebt;
-			interestAmount += ps[i].interestAmount;
-			earlyRepayment += ps[i].earlyRepayment;
+			cout << fixed<< setprecision(2)<< this->ps[i].numberMonth << " месяц  Основной платеж:" << this->ps[i].principalDebt << "  Процент:" << this->ps[i].interestAmount << "  Всего:" << this->ps[i].payment << " Остаток: " << this->ps[i].loanBalance << " Досрочное погашение: " << this->ps[i].earlyRepayment << endl;
+			principalDebt += this->ps[i].principalDebt;
+			interestAmount += this->ps[i].interestAmount;
+			earlyRepayment += this->ps[i].earlyRepayment;
 		}
 		cout << "Всего уплачено: Основная сумма - " << principalDebt+earlyRepayment << " проценты - " << interestAmount << endl;
+	
 	}
 
 private:
