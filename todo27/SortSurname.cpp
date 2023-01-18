@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 #include <Windows.h>
 
@@ -15,7 +15,7 @@ int main()
 	
     int size;
 
-    cout << "Ââåäèòå êîëè÷åñòâî ôàìèëèé: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ„Ð°Ð¼Ð¸Ð»Ð¸Ð¹: ";
     cin >> size;
 
     char **mass = new char*[size];
@@ -23,7 +23,7 @@ int main()
 
     for (int i = 0; i < 5; i++)
     {
-        cout << "Ââåäèòå ôàìèëèþ " << i + 1 << ":\t";
+        cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ„Ð°Ð¼Ð¸Ð»Ð¸ÑŽ " << i + 1 << ":\t";
         mass[i] = new char[20];
         cin >> mass[i];
     }
