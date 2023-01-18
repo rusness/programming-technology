@@ -13,23 +13,23 @@ int main()
     SetConsoleOutputCP(1251);
 
 	
-    int size;
+    int r;
 
     cout << "Введите количество фамилий: ";
-    cin >> size;
+    cin >> r;
 
-    char **mass = new char*[size];
+    char **mass = new char*[r];
     
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < r; i++)
     {
         cout << "Введите фамилию " << i + 1 << ":\t";
         mass[i] = new char[20];
         cin >> mass[i];
     }
-    for (int i = 0; i < size; i++) 
+    for (int i = 0; i < r; i++) 
     {
-        for (int j = i + 1; j < size; j++)
+        for (int j = i + 1; j < r; j++)
             if (strcmp(mass[i], mass[j]) > 0) 
             {
                 char* tmp = mass[i];
@@ -41,7 +41,7 @@ int main()
     cout << endl;
     cout << endl;
 
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < r; i++)
     {
         cout << mass[i] << endl;
     }
