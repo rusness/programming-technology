@@ -47,6 +47,11 @@ int main()
     }
 
 
+    for (int i = 0; i < r; i++)
+    {
+        delete mass[i];
+    }
+
     delete[] mass;
 
     return 0;
